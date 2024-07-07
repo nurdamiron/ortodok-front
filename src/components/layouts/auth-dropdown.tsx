@@ -35,8 +35,8 @@ export async function AuthDropdown({
     return (
       <Button size="sm" className={cn(className)} {...props} asChild>
         <Link href="/signin">
-          Sign In
-          <span className="sr-only">Sign In</span>
+          Войти
+          <span className="sr-only">Войти</span>
         </Link>
       </Button>
     )
@@ -90,7 +90,7 @@ export async function AuthDropdown({
         <DropdownMenuItem asChild>
           <Link href="/signout">
             <ExitIcon className="mr-2 size-4" aria-hidden="true" />
-            Log out
+            Выйти
             <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
           </Link>
         </DropdownMenuItem>

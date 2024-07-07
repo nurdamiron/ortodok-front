@@ -46,7 +46,7 @@ export function RateLimitAlert({
             rel="noopener noreferrer"
             className={buttonVariants({ className: "w-full" })}
           >
-            Contact us
+            Свяжитесь с нами!
           </Link>
         ) : (
           <ManageSubscriptionForm

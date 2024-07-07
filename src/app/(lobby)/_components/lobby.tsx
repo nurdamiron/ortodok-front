@@ -78,7 +78,7 @@ export async function Lobby({
              Посмотреть товары
           </Link>
           <Link
-            href="/dashboard/stores"
+            href="/about"
             className={cn(buttonVariants({ variant: "customWhite", size: "xl" }))}
           >
             О нас

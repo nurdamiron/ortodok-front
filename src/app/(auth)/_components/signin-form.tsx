@@ -104,8 +104,8 @@ export function SignInForm() {
               aria-hidden="true"
             />
           )}
-          Sign in
-          <span className="sr-only">Sign in</span>
+          Войти
+          <span className="sr-only">Войти</span>
         </Button>
       </form>
     </Form>

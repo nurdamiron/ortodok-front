@@ -48,20 +48,44 @@ export const siteConfig = {
       title: category.name,
       items: [
         {
-          title: "",
+          title: "Каталог продукции",
           href: `/categories/${slugify(category.name)}`,
-          description: `Все ${category.name}.`,
+          description: `Весь ${category.name}`,
           items: [],
         },
         ...category.subcategories.map((subcategory) => ({
           title: subcategory.name,
           href: `/categories/${slugify(category.name)}/${subcategory.slug}`,
           description: subcategory.description,
-          items: [],
+          // items: [],
         })),
       ],
     })),
-  ] satisfies MainNavItem[],
+    {
+      title: "Акции",
+      href: "/promotions",
+      description: "Информация о нашей компании и миссии.",
+      // items: [],
+    },
+    {
+      title: "Доставка и оплата",
+      href: "/shipping-payment",
+      description: "Информация о нашей компании и миссии.",
+      // items: [],
+    },
+    {
+      title: "О нас",
+      href: "/about",
+      description: "Информация о нашей компании и миссии.",
+      // items: [],
+    },
+    {
+      title: "Контакты",
+      href: "/contact",
+      description: "Информация о нашей компании и миссии.",
+      // items: [],
+    },
+  ]   satisfies MainNavItem[],
   footerNav: [
     {
       title: "Помощь",

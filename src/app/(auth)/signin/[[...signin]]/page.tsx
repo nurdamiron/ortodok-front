@@ -16,8 +16,8 @@ import { SignInForm } from "@/app/(auth)/_components/signin-form"
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
-  title: "Sign In",
-  description: "Sign in to your account",
+  title: "Войти",
+  description: "Войдите в свою учетную запись",
 }
 
 export default function SignInPage() {
@@ -25,7 +25,7 @@ export default function SignInPage() {
     <Shell className="max-w-lg">
       <Card>
         <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl">Sign in</CardTitle>
+          <CardTitle className="text-2xl">Войти</CardTitle>
           <CardDescription>
             Выберите предпочтительный способ входа в систему
           </CardDescription>

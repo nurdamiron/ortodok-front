@@ -58,14 +58,14 @@ export function MobileNav({ items }: MobileNavProps) {
           <div className="pl-1 pr-7">
             <Accordion type="multiple" className="w-full">
               {items?.map((item, index) => (
-                <AccordionItem value={item.title} key={index}>
-                  <AccordionTrigger className="text-sm capitalize">
-                    {item.title}
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="flex flex-col space-y-2">
-                      {item.items?.map((subItem, index) =>
-                        subItem.href ? (
+                item.items && item.items.length > 0 ? (
+                  <AccordionItem value={item.title} key={index}>
+                    <AccordionTrigger className="text-sm capitalize">
+                      {item.title}
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="flex flex-col space-y-2">
+                        {item.items.map((subItem, index) => (
                           <MobileLink
                             key={index}
                             href={String(subItem.href)}
@@ -76,18 +76,15 @@ export function MobileNav({ items }: MobileNavProps) {
                           >
                             {subItem.title}
                           </MobileLink>
-                        ) : (
-                          <div
-                            key={index}
-                            className="text-foreground/70 transition-colors"
-                          >
-                            {item.title}
-                          </div>
-                        )
-                      )}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
+                        ))}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                ) : (
+                  <Link key={index} href={item.href || "#"} className="block text-sm capitalize py-4" onClick={() => setOpen(false)}>
+                    {item.title}
+                  </Link>
+                )
               ))}
             </Accordion>
           </div>

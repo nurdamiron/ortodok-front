@@ -45,7 +45,7 @@ export function LobbySkeleton() {
             Посмотреть товары
           </Link>
           <Link
-            href="/dashboard/stores"
+            href="/about"
             className={cn(buttonVariants({ variant: "outline" }))}
           >
             О нас

@@ -10,7 +10,8 @@ import { Icons } from "@/components/icons"
 
 const oauthProviders = [
   { name: "Google", strategy: "oauth_google", icon: "google" },
-  { name: "Discord", strategy: "oauth_discord", icon: "discord" },
+  // { name: "Apple", strategy: "oauth_apple", icon: "apple" },
+
 ] satisfies {
   name: string
   icon: keyof typeof Icons

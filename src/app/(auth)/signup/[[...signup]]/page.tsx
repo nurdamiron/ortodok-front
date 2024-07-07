@@ -16,8 +16,8 @@ import { SignUpForm } from "@/app/(auth)/_components/signup-form"
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
-  title: "Sign Up",
-  description: "Sign up for an account",
+  title: "Зарегистрироваться",
+  description: "Зарегистрируйте учетную запись",
 }
 
 export default function SignUpPage() {
@@ -25,7 +25,7 @@ export default function SignUpPage() {
     <Shell className="max-w-lg">
       <Card>
         <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl">Sign up</CardTitle>
+          <CardTitle className="text-2xl">Зарегистрироваться</CardTitle>
           <CardDescription>
             Выберите предпочитаемый вами способ регистрации
           </CardDescription>
@@ -48,7 +48,7 @@ export default function SignUpPage() {
           <div className="text-sm text-muted-foreground">
             У вас уже есть учетная запись?{" "}
             <Link
-              aria-label="Sign in"
+              aria-label="Войти"
               href="/signin"
               className="text-primary underline-offset-4 transition-colors hover:underline"
             >
